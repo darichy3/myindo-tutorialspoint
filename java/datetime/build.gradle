@@ -1,0 +1,11 @@
+jar {
+    manifest {
+        attributes(
+                "Created-By": "Darichy",
+                "Specification-Title": "Tutorialspoint",
+                "Main-Class" : "id.myindo.tutorialspoint.datetime.core.DateTime",
+                "Class-Path": configurations.compile.collect { it.getName() }.join(' ')
+        )
+    }
+}
+
